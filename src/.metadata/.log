@@ -1,0 +1,97 @@
+!SESSION 2022-06-07 17:06:01.709 -----------------------------------------------
+eclipse.buildId=v22.4.0
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2022-06-07 17:06:40.419
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-06-07 17:06:40.419
+!MESSAGE Commands should really have a category: plug-in='com.renesas.cdt.core', id='com.renesas.cdt.managedbuilder.ui.commands.RenesasBuildOptionSettingsCommand', categoryId='com.renesas.cdt.quick.option.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-06-07 17:06:40.419
+!MESSAGE Commands should really have a category: plug-in='com.renesas.cdt.core.ui', id='com.renesas.cdt.core.ui.commands.deviceMigrationCommand', categoryId='com.renesas.cdt.core.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-06-07 17:06:40.419
+!MESSAGE Commands should really have a category: plug-in='com.renesas.cdt.core.ui', id='com.renesas.cdt.core.ui.commands.toolchainVersionMigrationCommand', categoryId='com.renesas.cdt.core.ui.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-06-07 17:06:40.909
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-06-07 17:06:40.909
+!MESSAGE Commands should really have a category: plug-in='com.renesas.cdt.core', id='com.renesas.cdt.managedbuilder.ui.commands.RenesasBuildOptionSettingsCommand', categoryId='com.renesas.cdt.quick.option.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-06-07 17:06:40.909
+!MESSAGE Commands should really have a category: plug-in='com.renesas.cdt.core.ui', id='com.renesas.cdt.core.ui.commands.deviceMigrationCommand', categoryId='com.renesas.cdt.core.ui.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-06-07 17:06:40.909
+!MESSAGE Commands should really have a category: plug-in='com.renesas.cdt.core.ui', id='com.renesas.cdt.core.ui.commands.toolchainVersionMigrationCommand', categoryId='com.renesas.cdt.core.ui.commands.category'
+
+!ENTRY com.tasking.util 4 0 2022-06-07 17:06:44.007
+!MESSAGE Unable to open AD communication channel
+
+!ENTRY org.eclipse.ui 4 0 2022-06-07 17:06:44.699
+!MESSAGE Startup class com.renesas.cdt.debug.ui.Activator must implement org.eclipse.ui.IStartup
+
+!ENTRY org.eclipse.mylyn.commons.ui 4 0 2022-06-07 17:06:46.277
+!MESSAGE For input string: "CO"
+!STACK 0
+java.lang.NumberFormatException: For input string: "CO"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at org.eclipse.mylyn.internal.commons.ui.E4ThemeColor.getRGBFromCssString(E4ThemeColor.java:57)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getRGBFromTheme(GradientColors.java:212)
+	at org.eclipse.mylyn.commons.ui.GradientColors.getBackground(GradientColors.java:190)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createBorderColor(GradientColors.java:78)
+	at org.eclipse.mylyn.commons.ui.GradientColors.createColors(GradientColors.java:54)
+	at org.eclipse.mylyn.commons.ui.GradientColors.<init>(GradientColors.java:50)
+	at org.eclipse.mylyn.commons.ui.dialogs.AbstractNotificationPopup.initResources(AbstractNotificationPopup.java:226)
+	at org.eclipse.mylyn.commons.ui.dialogs.AbstractNotificationPopup.<init>(AbstractNotificationPopup.java:138)
+	at org.eclipse.mylyn.commons.ui.dialogs.AbstractNotificationPopup.<init>(AbstractNotificationPopup.java:129)
+	at org.eclipse.mylyn.commons.workbench.AbstractWorkbenchNotificationPopup.<init>(AbstractWorkbenchNotificationPopup.java:31)
+	at org.eclipse.mylyn.internal.commons.notifications.ui.popup.NotificationPopup.<init>(NotificationPopup.java:50)
+	at org.eclipse.mylyn.internal.commons.notifications.ui.popup.PopupNotificationSink.showPopup(PopupNotificationSink.java:154)
+	at org.eclipse.mylyn.internal.commons.notifications.ui.popup.PopupNotificationSink$1$1.run(PopupNotificationSink.java:85)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4584)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:677)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:614)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1485)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1458)
+
+!ENTRY org.eclipse.core.resources 4 77 2022-06-07 17:07:40.712
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-06-07 17:07:40.712
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-06-07 17:07:40.712
+!MESSAGE /home/zkmike/workspace/rzv2l_camera/isp_apps/multi_camera/src overlaps the workspace location: /home/zkmike/workspace/rzv2l_camera/isp_apps/multi_camera/src
+
+!ENTRY org.eclipse.core.resources 4 77 2022-06-07 17:12:31.370
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-06-07 17:12:31.370
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-06-07 17:12:31.370
+!MESSAGE /home/zkmike/workspace/rzv2l_camera/isp_apps/multi_camera/src overlaps the workspace location: /home/zkmike/workspace/rzv2l_camera/isp_apps/multi_camera/src
+
+!ENTRY org.eclipse.core.resources 4 77 2022-06-07 17:13:16.923
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-06-07 17:13:16.923
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-06-07 17:13:16.923
+!MESSAGE /home/zkmike/workspace/rzv2l_camera/isp_apps/multi_camera/src/RemoteSystemsTempFiles overlaps the location of another project: 'RemoteSystemsTempFiles'
